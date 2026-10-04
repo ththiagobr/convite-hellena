@@ -129,4 +129,12 @@ $('form').addEventListener('submit',async e=>{e.preventDefault();if(isExpired())
   $('formCard').style.display='none';$('success').style.display='block';$('successText').textContent=`Obrigado, ${item.name}! Sua resposta foi registrada.`
 });
 const EVENT_TARGET_MS=Date.UTC(2026,10,27,22,0,0);function tick(){const q=Math.max(0,EVENT_TARGET_MS-Date.now());const z=Math.floor(q/1000);const days=Math.floor(z/86400);const hours=Math.floor((z%86400)/3600);const mins=Math.floor((z%3600)/60);const secs=z%60;$('d').textContent=String(days).padStart(2,'0');$('h').textContent=String(hours).padStart(2,'0');$('m').textContent=String(mins).padStart(2,'0');$('s').textContent=String(secs).padStart(2,'0');}tick();setInterval(tick,1000);
-</script></body></html>
+</script><script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("PWA: Service Worker registrado"))
+      .catch((error) => console.error("PWA: erro no Service Worker", error));
+  });
+}
+                                      </script></body></html>
