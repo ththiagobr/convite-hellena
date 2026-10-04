@@ -1,0 +1,127 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#D71A21"><link rel="manifest" href="manifest.webmanifest"><link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=Brusher:400&family=Grand+Hotel:400&family=Mervale+Script:400&family=Niconne:400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.cdnfonts.com/css/daydream" rel="stylesheet"><title>Hellena — 1 aninho</title>
+<style>:root{--bg:#fff9f9;--card:#fff;--text:#4a2227;--muted:#8f5c63;--line:#efd4d7;--pink:#D71A21;--pink2:#D71A21;--soft:#FFE5E5;--ok:#3e9968}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Quicksand,system-ui,sans-serif}.wrap{max-width:560px;margin:auto;padding:22px 18px 40px}.hero{text-align:center}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:12px;color:var(--muted)}h1{font-family:'Daydream',cursive;font-size:58px;font-weight:400;font-style:normal;line-height:1;margin:8px 0;color:var(--pink2)}.subtitle{color:var(--muted);font-family:'Grand Hotel',cursive;font-size:25px;line-height:1.15}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px auto 18px;max-width:390px;transform:scale(.88);transform-origin:top center}.count div,.card{background:#fff;border:1px solid var(--line);border-radius:20px}.count div{text-align:center;padding:12px 5px}.count b{display:block;font-size:23px}.count span{font-size:10px;color:var(--muted)}.card{padding:22px;margin-top:14px;box-shadow:0 8px 28px rgba(215,26,33,.10)}h2,h3{font-weight:600}label{display:block;font-size:13px;font-weight:700;margin:0 0 7px}.field{margin-bottom:15px}input,select,textarea{width:100%;padding:14px;border:1px solid #e4ced9;border-radius:13px;font:inherit;background:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--pink);box-shadow:0 0 0 3px #D71A2122}.choices{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.choice input{display:none}.choice span{display:block;text-align:center;padding:14px 6px;border:1px solid var(--line);border-radius:13px;cursor:pointer;font-weight:600}.choice input:checked+span{background:var(--soft);border-color:var(--pink);color:var(--pink2)}.response span{min-height:54px;display:grid;place-items:center}.primary{width:100%;border:0;border-radius:14px;padding:16px;background:linear-gradient(135deg,var(--pink),var(--pink2));color:white;font:700 16px Quicksand;box-shadow:0 8px 20px #D71A213D;cursor:pointer}.secondary{border:1px solid #E79A9E;border-radius:13px;padding:12px 15px;background:var(--soft);color:var(--pink2);font:700 14px Quicksand;cursor:pointer}.adminlink{display:flex;justify-content:center;align-items:center;width:100%;min-height:52px;margin-top:18px;padding:14px;border:1px solid #E79A9E;border-radius:14px;background:var(--soft);color:var(--pink2);font-weight:700;cursor:pointer}.success{display:none;text-align:center}.check{width:64px;height:64px;margin:auto;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--pink2);font-size:32px}.admin{display:none}.topbar{display:flex;justify-content:space-between;align-items:center;gap:10px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#FFF0F0;border-radius:15px;padding:13px}.stat b{display:block;font-size:24px}.stat small{color:var(--muted)}.person{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.person strong{display:block}.person small{color:var(--muted)}.badge{font-size:12px;font-weight:700;white-space:nowrap}.green{color:var(--ok)}.hellena-name{font-family:'Daydream',cursive!important;font-weight:400!important;font-style:normal!important}.footer{text-align:center;color:#999;font-size:12px;margin-top:24px}.notice{font-size:12px;color:#777;line-height:1.5}@media(max-width:430px){.count{grid-template-columns:repeat(2,1fr)}}@media(max-width:380px){h1{font-size:46px}.choices{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+
+body{position:relative;overflow-x:hidden}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:url('fundo_convite.jpg');
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  opacity:.30;
+  z-index:-2;
+  pointer-events:none;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(255,255,255,.24);
+  z-index:-1;
+  pointer-events:none;
+}
+.hero,.card,.count,.footer,.admin{position:relative;z-index:1}
+
+#formCard{
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+.remove-btn{border:1px solid #D71A21;background:#fff;color:#D71A21;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer}.remove-btn:active{transform:scale(.98)}
+</style></head><body><div class="wrap">
+<main id="guest"><section class="hero"><div class="eyebrow" style="font-size:14px">Você está convidado</div><h1>Hellena</h1><div class="subtitle">1 aninho • 27 de novembro de 2026 • 19:00</div></section>
+<div class="count"><div><b id="d">--</b><span>DIAS</span></div><div><b id="h">--</b><span>HORAS</span></div><div><b id="m">--</b><span>MINUTOS</span></div><div><b id="s">--</b><span>SEGUNDOS</span></div></div>
+<section class="card" id="formCard"><h2 style="font-family:'Brusher',cursive;font-size:34px;font-weight:700;font-style:italic;color:var(--pink2);margin:0 0 4px">Você vai?</h2><p style="margin:0 0 18px;color:var(--muted)">Escolha sua resposta e confirme.</p>
+<form id="form"><div class="field"><label>Resposta</label><div class="choices response"><label class="choice"><input type="radio" name="status" value="confirmed" checked><span>✓ Vou</span></label><label class="choice"><input type="radio" name="status" value="maybe"><span>🤔 Talvez</span></label><label class="choice"><input type="radio" name="status" value="declined"><span>Não vou</span></label></div></div>
+<div class="field"><label for="name">Seu nome</label><input id="name" required placeholder="Digite seu nome"></div>
+<div class="field"><label>Vai levar crianças?</label><div class="choices" style="grid-template-columns:1fr 1fr"><label class="choice"><input type="radio" name="hasKids" value="yes"><span>👧 Sim</span></label><label class="choice"><input type="radio" name="hasKids" value="no" checked><span>Não</span></label></div></div>
+<div class="field" id="kidsWrap" style="display:none"><label for="kids">Quantas crianças?</label><select id="kids"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+<div class="field"><label for="adults">Quantidade de adultos (incluindo você)</label><select id="adults"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+<div class="field"><label for="msg">Deixe um recado</label><textarea id="msg" rows="3" maxlength="300" placeholder="Escreva uma mensagem..."></textarea></div><button class="primary">Confirmar presença</button></form></section>
+<section class="card success" id="success"><div class="check">✓</div><h2 style="font-family:'Brusher',cursive;font-size:36px;font-weight:700;font-style:italic;color:var(--pink2)">Presença confirmada!</h2><p id="successText"></p></section>
+<div class="footer">Convite digital • Hellena<div class="adminlink" onclick="login()">🔐 Entrar como anfitrião</div></div></main>
+<main id="admin" class="admin"><section class="card"><div class="topbar"><div><div class="eyebrow">Área exclusiva</div><h2 class="hellena-name" style="font-size:36px;color:var(--pink2);margin:4px 0">Hellena</h2></div><button class="secondary" onclick="back()">Sair</button></div><p style="color:var(--muted)">27/11/2026 • 19:00</p><div class="stats"><div class="stat"><b id="families">0</b><small>Famílias</small></div><div class="stat"><b id="adultsTotal">0</b><small>Adultos</small></div><div class="stat"><b id="kidsTotal">0</b><small>Crianças</small></div></div><button class="primary" style="margin-top:12px" onclick="familiesView()">👨‍👩‍👧 Ver por família</button></section>
+<section class="card" id="familyCard" style="display:none"><div class="topbar"><h3 style="margin:0;font-family:'Brusher',cursive;font-size:32px;font-weight:700;font-style:italic;color:var(--pink2)">Famílias</h3><button class="secondary" onclick="hideFamilies()">Voltar</button></div><div id="familyList"></div></section>
+<section class="card" id="peopleCard"><h3 style="font-family:'Brusher',cursive;font-size:32px;font-weight:700;font-style:italic;color:var(--pink2);margin-top:0">Confirmados</h3><div id="people"></div><p class="notice">As confirmações são sincronizadas pelo Supabase. O acesso da anfitriã é protegido por senha.</p></section></main>
+</div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+const EXPIRATION=new Date('2026-11-28T23:59:59-03:00').getTime();
+let adminSession=null;
+let adminPassword=null;
+function isExpired(){return Date.now()>EXPIRATION}
+function showExpired(){if(isExpired()){document.querySelectorAll('#form input,#form select,#form textarea,#form button').forEach(el=>el.disabled=true);const card=$('formCard');if(card&&!$('expiredNotice')){const n=document.createElement('div');n.id='expiredNotice';n.style='margin-top:14px;padding:14px;border-radius:13px;background:#FFE5E5;color:#D71A21;font-weight:700;text-align:center';n.textContent='Este convite encerrou as confirmações em 28 de novembro de 2026.';card.appendChild(n)}}}
+async function render(rows){
+  if(!adminSession) return;
+  rows=rows||[];
+  const a=rows.filter(x=>x.status==='confirmed');
+  $('families').textContent=a.length;$('adultsTotal').textContent=a.reduce((n,x)=>n+x.adults,0);$('kidsTotal').textContent=a.reduce((n,x)=>n+x.kids,0);
+  $('people').innerHTML=rows.map(x=>`<div class="person"><div><strong>${esc(x.name)}</strong><small>${x.adults} adulto(s) • ${x.kids} criança(s)</small>${x.message?`<div style="margin-top:6px">💬 “${esc(x.message)}”</div>`:''}</div><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end"><span class="badge ${x.status==='confirmed'?'green':''}">${x.status==='confirmed'?'✓ Confirmado':x.status==='maybe'?'🤔 Talvez':'✕ Não vai'}</span><button type="button" class="remove-btn" onclick="removeRsvp('${x.id}')">Remover</button></div></div>`).join('')||'<p style="color:#777">Ainda não há respostas.</p>';
+  renderFamilies(rows);
+}
+function renderFamilies(rows){const a=(rows||[]).filter(x=>x.status==='confirmed');$('familyList').innerHTML=a.map(x=>`<div class="person"><div><strong>${esc(x.name)}</strong><small>${x.adults} adulto(s) • ${x.kids} criança(s)</small></div><span class="badge green">✓</span></div>`).join('')||'<p style="color:#777">Nenhuma família confirmada.</p>'}
+async function login(){
+  const password=prompt('Digite a senha da anfitriã:');
+  if(!password)return;
+  try{
+    const {data:check,error:checkError}=await supabaseClient.rpc('check_hellena_password',{p_password:password});
+    if(checkError){
+      console.error('check_hellena_password:',checkError);
+      alert('Não foi possível validar a senha agora. Verifique sua conexão com o Supabase.');
+      return;
+    }
+    if(check!==true){alert('Senha incorreta.');return;}
+    const {data,error}=await supabaseClient.rpc('get_hellena_rsvps',{p_password:password});
+    if(error){
+      console.error('get_hellena_rsvps:',error);
+      alert('A senha está correta, mas o painel não conseguiu carregar as confirmações. Execute o SQL de atualização da V33 no Supabase.');
+      return;
+    }
+    adminSession=true;
+    adminPassword=password;
+    $('guest').style.display='none';
+    $('admin').style.display='block';
+    await render(Array.isArray(data)?data:[]);
+  }catch(err){
+    console.error(err);
+    alert('Ocorreu um erro ao abrir a área da anfitriã. Tente novamente.');
+  }
+}
+
+async function removeRsvp(id){
+  if(!adminSession || !adminPassword) return;
+  const ok=confirm('Remover esta confirmação? Esta ação não pode ser desfeita.');
+  if(!ok) return;
+  try{
+    const {data,error}=await supabaseClient.rpc('delete_hellena_rsvp',{p_password:adminPassword,p_rsvp_id:id});
+    if(error){console.error('delete_hellena_rsvp:',error);alert('Não foi possível remover agora.');return;}
+    if(data!==true){alert('Não foi possível remover esta confirmação.');return;}
+    const {data:rows,error:loadError}=await supabaseClient.rpc('get_hellena_rsvps',{p_password:adminPassword});
+    if(loadError){alert('A confirmação foi removida, mas não foi possível atualizar a lista. Reabra a área da anfitriã.');return;}
+    await render(Array.isArray(rows)?rows:[]);
+  }catch(err){console.error(err);alert('Ocorreu um erro ao remover a confirmação.');}
+}
+async function back(){adminSession=null;adminPassword=null;$('admin').style.display='none';$('guest').style.display='block'}
+function familiesView(){$('peopleCard').style.display='none';$('familyCard').style.display='block'}
+function hideFamilies(){$('familyCard').style.display='none';$('peopleCard').style.display='block'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+document.querySelectorAll('input[name=hasKids]').forEach(x=>x.addEventListener('change',()=>{$('kidsWrap').style.display=document.querySelector('input[name=hasKids]:checked').value==='yes'?'block':'none'}));
+function isExpired(){return Date.now()>EXPIRATION}function showExpired(){if(isExpired()){document.querySelectorAll('#form input,#form select,#form textarea,#form button').forEach(el=>el.disabled=true);const card=$('formCard');if(card&&!$('expiredNotice')){const n=document.createElement('div');n.id='expiredNotice';n.style='margin-top:14px;padding:14px;border-radius:13px;background:#FFE5E5;color:#D71A21;font-weight:700;text-align:center';n.textContent='Este convite encerrou as confirmações em 28 de novembro de 2026.';card.appendChild(n)}}}showExpired();setInterval(showExpired,60000);
+$('form').addEventListener('submit',async e=>{e.preventDefault();if(isExpired()){showExpired();return;}
+  const st=document.querySelector('input[name=status]:checked').value;
+  const kids=st==='declined'?0:(document.querySelector('input[name=hasKids]:checked').value==='yes'?Number($('kids').value):0);
+  const item={event_id:EVENT_ID,name:$('name').value.trim(),status:st,adults:Number($('adults').value),kids,message:$('msg').value.trim()};
+  if(!item.name){return}
+  const btn=e.submitter;btn.disabled=true;btn.textContent='Enviando...';
+  const {error}=await supabaseClient.from('rsvps').insert(item);
+  btn.disabled=false;btn.textContent='Confirmar presença';
+  if(error){alert('Não foi possível registrar agora. Tente novamente.');return}
+  $('formCard').style.display='none';$('success').style.display='block';$('successText').textContent=`Obrigado, ${item.name}! Sua resposta foi registrada.`
+});
+const EVENT_TARGET_MS=Date.UTC(2026,10,27,22,0,0);function tick(){const q=Math.max(0,EVENT_TARGET_MS-Date.now());const z=Math.floor(q/1000);const days=Math.floor(z/86400);const hours=Math.floor((z%86400)/3600);const mins=Math.floor((z%3600)/60);const secs=z%60;$('d').textContent=String(days).padStart(2,'0');$('h').textContent=String(hours).padStart(2,'0');$('m').textContent=String(mins).padStart(2,'0');$('s').textContent=String(secs).padStart(2,'0');}tick();setInterval(tick,1000);
+</script></body></html>
